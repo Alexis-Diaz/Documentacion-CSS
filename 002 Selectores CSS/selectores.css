@@ -1,0 +1,102 @@
+/*
+Un selector css sirve para seleccionar los 
+elementos HTML que desea diseñar
+
+Los selectores se pueden dividir en 5 categorías:
+
+    1- Selectores simples: 
+        Seleccionan los elementos HTML por medio del nombre de la
+        etiqueta, su id o clase.
+    
+    2- Selectores combinados: 
+        Selecciona los elementos en función a una relación específica
+        entre ellos.
+
+    3- Selectores de pseudoclase:
+        Selecciona los elementos en función de un estado determinado.
+    
+    4- Selectores de pseudoelementos: 
+        Selecciona y diseña una parte de un elemento.
+
+    5- Selector de atributo: 
+        Seleccionad los elementos en función de un atributo o
+        valor de atributo.
+
+Ejemplos: A continuación se describe como utilizar los selectores
+simples.
+
+
+SELECTORES SIMPLES
+Se seleccionan todos los elementos que
+tienen la clase "titulo". Observar que 
+se usa un punto (.) antes del selector
+para indicar que se trata de una clase.
+*/
+.titulo{
+    color:blueviolet;
+    text-align:center;
+}
+
+/*
+Se selecciona solo el elemento que 
+tiene el id "subtitulo". Observar que
+se usa el numeral (#) antes del 
+selector para indicar que se trata
+de un id.
+*/
+
+#subtitulo{
+    color:brown;
+    text-align: center;
+}
+
+/*
+Se selecciona todos los elementos <p></p>
+*/
+
+p {
+    color: green;
+    text-align: center;
+}
+
+/*
+COMBINACION DE SELECTORES SIMPLES
+Se pueden combinar los selectores para poder especificar
+los elementos HTML que deseamos afectar con una deter-
+minada regla CSS.
+
+Ejemplo 1: Se desea dar estilo a las etiquetas h3 y h4.
+Para ello el selector debe tener la siguiente estructura:
+Elemento,Elemento {cuerpo de la declaracion}
+*/
+
+h3, h4 {
+    color: red;
+    line-height: 0.2em;/*ancho entre linea*/
+    font-size: 2em;
+}
+
+/*Ejemplo 1: Se desea dar estilo solo a las etiquetas h5 que
+tengan la clase "manzana". Para ello debemos el selector
+debe tener la siguiente estructura:
+Elemento.Clase {cuerpo de la declaracion}
+*/
+
+h5.manzana {
+    color: rgb(53, 153, 170);
+    font-size: 2em;
+}
+
+/*
+Ejemplo 2: Se desea dar estilo solo a las etiquetas h5 que
+tengan la clase "fresa" o "pera". Para ello debemos el selector
+debe tener la siguiente estructura:
+.Clase, .clase {cuerpo de la declaracion}
+
+*/
+.fresa,.pera{
+ color: darkgoldenrod;
+ text-align: right;
+ line-height: 0px;
+ font-size: 3em;
+}
