@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Outline (contorno)</h1>
+    <p>
+        Un contorno es una línea dibujada fuera del borde del 
+        elemento. Ejemplo:
+    </p>
+    <div class="outline">
+        Este elemento &lt;div&gt; tiene un borde 
+        color negro y un contorno (outline) verde.
+    </div>
+    <br>
+    <p>
+        Un contorno es una línea que se dibuja alrededor de 
+        los elementos, FUERA de los bordes, para hacer que el 
+        elemento <q>destaque</q>.
+    </p>
+    <p>
+        Css tiene las siguientes propiedades de outline:
+        <ul style="list-style-type:circle">
+            <li>outline-style</li>
+            <li>outline-color</li>
+            <li>outline-width</li>
+            <li>oultine-offset</li>
+            <li>outline</li>
+        </ul>
+    </p>
+    <p>
+        <strong>Importante:</strong>Outline difiere de border.
+        A diferencia de border, el outline se dibuja fuera del 
+        border del elemento y puede superponerse a otro contenido.
+        Además, el contorno NO es parte de las dimensiones del elemento
+        . La altura y ancho total del elemento no se ven afectados 
+        por el ancho de outline.
+    </p>
+    <!-- <div style="background-color:rgb(232, 243, 78); height:30px;">Contenido</div>
+    <div class="outline">Contenido</div> -->
+   
+    <h2>outline-style</h2>
+    <p>
+        La propiead <q>outline-style</q> especifica el estilo
+        del contorno del control y puede tener uno de los 
+        siguientes valores:
+        <ul style="list-style-type:square;">
+            <li>dotted: Define un contorno punteado.</li>
+            <li>dashed: Define un contorno de lineas cortadas.</li>
+            <li>solid: Define un contorno solido.</li>
+            <li>double: Define un contorno doble.</li> 
+            <li>groove: Define un contorno acanalado 3D.</li>
+            <li>ridge: Define un contorno estriado en 3D.</li>
+            <li>inset: Define un contorno de insercción en 3D.</li>
+            <li>outset: Define un contorno inicial 3D.</li>
+            <li>none: Define ningun contorno.</li>
+            <li>hidden: Define un contorno oculto.</li>
+        </ul>  
+    </p>
+    <p>Ejemplo:</p>      
+    <div class="dotted">Contenido del elemento</div>
+    <div class="dashed">Contenido del elemento</div>
+    <div class="solid">Contenido del elemento</div>
+    <div class="double">Contenido del elemento</div>
+    <div class="groove">Contenido del elemento</div>
+    <div class="ridge">Contenido del elemento</div>
+    <div class="inset">Contenido del elemento</div>
+    <div class="outset">Contenido del elemento</div>
+    <div class="none">Contenido del elemento</div>
+    <div class="hidden">Contenido del elemento</div>
+</body>
+</html>

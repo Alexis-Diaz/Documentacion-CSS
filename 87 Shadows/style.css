@@ -1,0 +1,36 @@
+#titulo1{
+    text-shadow: 2px 2px;
+}
+
+#titulo2{
+    text-shadow: 2px 2px red;
+}
+
+#titulo3{
+    text-shadow: 2px 2px 5px red;
+}
+
+#titulo4{
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+#titulo5{
+    color: white;
+    text-shadow: 0 0 5px #FF0000;
+}
+
+#titulo6{
+    color: white;
+    text-shadow: 0 0 5px #FF0000, 0 0 10px #0000FF;
+}
+
+#titulo7{
+    color: white;
+    text-shadow: 0 0 5px black, 0 0 10px #0000FF, 0 0 5px #FF0000;
+}
+
+#titulo8{
+    color: white;
+    text-shadow: 1px 0  purple, -1px 0  purple, 0 1px  purple, 0 -1px purple;
+}

@@ -1,0 +1,45 @@
+p.text1{
+    white-space: nowrap;/*Segun entiendo esta propiedad impide que el navegador ordene el texto(ver carpeta 36)*/
+    width: 200px;
+    border: 1px solid black;
+    overflow: hidden;/*impide que el div se ajuste*/
+    text-overflow: clip;/*por defecto*/
+}
+
+p.text2{
+    white-space: nowrap;
+    width: 200px;
+    border: 1px solid black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+p.visible:hover{
+    overflow: visible;
+}
+
+#palabra{
+    width: 11em;
+    border: solid 1px rgb(200,200,200);
+    word-wrap: break-word;
+}
+span{
+    background-color: yellow;
+}
+
+#salto1{
+    width: 11em;
+    border: solid 1px rgb(100, 100, 100);
+    word-break: keep-all;
+}
+
+#salto2{
+    width: 11em;
+    border: solid 1px rgb(100, 100, 100);
+    word-break: break-all;
+}
+
+span#vertical{
+    background-color: transparent;
+    writing-mode: vertical-rl;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Desbordamiento de texto CSS, ajuste de palabras, reglas de salto
+        de líneas y modo de escritura
+    </h1>
+
+
+    <h2>text-overflow</h2>
+    <p>
+        La <b>text-overflow</b> propiedad CSS especifica cómo
+        se debe señalar al usuario el contenido que no se muestra.
+    </p>
+    <p>
+        Contenido recortado usando el valor clip.<br>
+        Es valor es por defecto, es decir que cuando se usa
+        la overflow: hidden sobre el parrafo, de manera automatica
+        el texto se corta, esto sucede porque text-overflow por 
+        defecto es clip. Para comprobarlo basta con borra la 
+        propiedad de la hoja de estilo y se verá que no cambia nada.
+
+    </p>
+    <p class="text1">
+        Lorem ipsum dolor sit amet consectetur adipisici
+        ng elit. Necessitatibus nemo officia asperiores 
+        distinctio dicta, tempora quidem at deleniti qui
+        a nihil, sapiente rem vero esse consectetur labo
+        re, inventore similique nesciunt natus.
+    </p>
+
+    <p>Puntos suspensivos... usando el valor ellipsis.</p>
+    <p class="text2">
+        Lorem ipsum dolor sit amet consectetur adipisici
+        ng elit. Necessitatibus nemo officia asperiores 
+        distinctio dicta, tempora quidem at deleniti qui
+        a nihil, sapiente rem vero esse consectetur labo
+        re, inventore similique nesciunt natus.
+    </p>
+
+    <p>
+        Mostrando el contenido desbordado al pasar el mouse.
+        Para ello solo se pasa el overflow a visible.
+    </p>
+    <p class="text1 visible">
+        Lorem ipsum dolor sit amet consectetur adipisici
+        ng elit. Necessitatibus nemo officia asperiores 
+        distinctio dicta, tempora quidem at deleniti qui
+        a nihil, sapiente rem vero esse consectetur labo
+        re, inventore similique nesciunt natus.
+    </p>
+
+    <p class="text2 visible">
+        Lorem ipsum dolor sit amet consectetur adipisici
+        ng elit. Necessitatibus nemo officia asperiores 
+        distinctio dicta, tempora quidem at deleniti qui
+        a nihil, sapiente rem vero esse consectetur labo
+        re, inventore similique nesciunt natus.
+    </p>
+
+
+
+    <h2>word-wrap</h2>
+    <p>
+        Esta propiedad CSS permite que las palabras largas
+        puedan dividirse y ajustarse a la siguiente línea.
+    </p>
+    <p>
+        Si una palabra es demasiada larga para caber dentro
+        de un area, se expande hacia afuera.
+    </p>
+    <p id="palabra">
+        Lorem ipsum dolor sit amet consectetur adipisici
+        <span>palabramuylargaqueseromperaparaquequepaeneldiv</span>
+        ng elit. Iusto laborum impedit architecto quae l
+        ibero neque sed natus reprehenderit debitis cul
+        pa quaerat id beatae consequuntur, mollitia und
+        e a quas quia labore.
+    </p>
+
+
+
+    <h2>word-break</h2>
+    <p>Esta propiedad especifica reglas de saltos de lineas</p>
+    <p id="salto1">
+        Lorem ipsum dolor sit amet consectetur, adipisicing 
+        <span>Esta-palabra-se-romperá-en-algun-guión</span>
+        elit. Nostrum, vel error! Dolor exercitationem natus
+        id ab necessitatibus eveniet dignissimos, itaque d
+        eleniti vel voluptatem velit blanditiis veniam, co
+        nsequuntur quis soluta. Blanditiis.
+    </p>
+    <p id="salto2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing 
+        <span>Esta-palabra-se-romperá-en-cualquier-letra</span>
+        elit. Nostrum, vel error! Dolor exercitationem natus
+        id ab necessitatibus eveniet dignissimos, itaque d
+        eleniti vel voluptatem velit blanditiis veniam, co
+        nsequuntur quis soluta. Blanditiis.
+    </p>
+
+
+
+    <h2>writing-mode</h2>
+    <p>
+        Esta propiedad especifica si las lineas de texto se 
+        distribuyen horizontal o verticalmente. (Se puede 
+        aplicar a parrafos enteros. Obviamente no se vera 
+        bien.)
+    </p>
+    <p>
+        Este texto contiene una etiqueta 
+        &lt;span&gt; 
+        <span id="vertical">vertical-rl</span>
+        &lt;/span&gt; 
+        con texto vertical
+    </p>
+</body>
+</html>

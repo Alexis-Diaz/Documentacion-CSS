@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Trnasformaciones</h1>
+    <p>
+        La propiedad <q>transform</q> permite mover, rotar,
+        escalar y sesgar elementos.
+    </p>
+    <p>
+        Se pueden utilizar los siguientes metodos.
+    </p>
+    <ul>
+        <li>translate()</li>
+        <li>rotate()</li>
+        <li>scaleX()</li>
+        <li>scaleY()</li>
+        <li>scale()</li>
+        <li>skewX()</li>
+        <li>skewY()</li>
+        <li>skew()</li>
+        <li>matrix()</li>
+    </ul>
+
+    <h2>translate()</h2>
+    <p>
+        Este metodo mueve el elementos desde su posicion
+        inicial hasta los parametros dados para el eje x y eje y.
+    </p>
+    <p>
+        El siguiente ejemplo mueve el elemento div 50 px a la
+        derecha y 20 px hacia abajo desde su posicion actual.
+    </p>
+    <div id="div-translate">translate (50px, 20px)</div>
+
+
+    <h2>rotate()</h2>
+    <p>
+        Este metodo hace girar el elemento en sentido
+        horario o antihorario segun grados dados.
+    </p>
+    <p>
+        El siguiente ejemplo rota el div en el sentido de las 
+        agujas del reloj 20 grados.
+    </p>
+    <div id="div-rotate1">rotate(20deg)</div>
+    <p>
+        El siguiente ejemplo rota el div en el sentido 
+        contrario de las agujas del reloj 20 grados.
+    </p>
+    <div id="div-rotate2">rotate(20deg)</div>
+
+
+    <h2>scale()</h2>
+    <p>
+        Este metodo mueve aumenta o disminuye el tamaño de un
+        elemento (según los parametros dados para el ancho y el 
+        alto)
+    </p>
+    <p>
+        El siguiente ejemplo aumenta el elemento div a dos
+        veces su ancho original y tres veces su altura.
+    </p>
+    <div id="div-scale">scale (2, 3)</div>
+    <p>
+        Existen dos metodos derivados de este: scaleX, scaleY.
+        Estos metodos funcionan igual que el anterior, la diferencia
+        es que cada uno solo modifica una dimension ancho (scaleX) y
+        su alto (scaleY).
+    </p>
+
+
+
+    <h2>skewX y skewY</h2>
+    <p>
+        Estos metodos sesgan los elementos a lo largo de su
+        eje X o eje Y.
+        Ejemplo:
+    </p>
+    <div id="div-skewX">skewX (20deg)</div>
+    <div id="div-skewY">skeY (20deg)</div>
+    
+
+
+    <h2>skew()</h2>
+    <p>Este metodo es la combinaciones de los dos metodos anteriores.</p>
+    <div id="div-skew">ske (20deg, 10deg)</div>
+
+
+
+    <h2>matrix()</h2>
+    <p>
+        Este metodo combina todos los metodos de transformacion 
+        2D en uno. Toma por tanto, seis parametros que contienen
+        funciones matematicas, lo qe le permite rotar, escalar,
+        mover, y sesgar elementos.
+    </p>
+    <p>
+        Los parámetros son los siguientes: 
+        matrix (scaleX (), skewY (), skewX (), scaleY (), translateX (), translateY ())
+    </p>
+    <div id="div-matrix">ske (20deg, 10deg)</div>
+</body>
+</html>

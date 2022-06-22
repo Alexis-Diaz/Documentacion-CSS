@@ -1,0 +1,108 @@
+/*Tabla 1*/
+.table1{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.table1 th{
+    padding: 15px;
+    text-align: left;
+    border: 1px rgb(199, 192, 192) solid;
+}
+
+table.table1 td{
+    padding: 15px;
+    border: 1px solid rgb(199, 192, 192);
+}
+
+
+/*Tabla 2*/
+.table2{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.table2 th{
+    padding: 7px;
+    text-align: left;
+    border-bottom: 2px rgb(199, 192, 192) solid;
+}
+
+table.table2 td{
+    padding: 7px;
+    border-bottom: 1px solid rgb(199, 192, 192);
+}
+
+
+/*Tabla 3*/
+.table3{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.table3 tbody tr:hover{
+    background-color: rgb(194, 194, 194);
+}
+
+table.table3 th{
+    padding: 7px;
+    text-align: left;
+    border-bottom: 2px rgb(199, 192, 192) solid;
+}
+
+table.table3 td{
+    padding: 7px;
+    border-bottom: 1px solid rgb(199, 192, 192);
+}
+
+
+
+/*Tabla 4*/
+.table4{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.table4 tbody tr:nth-child(odd){
+    background-color: rgb(235, 231, 231);
+}
+
+/*para que funcione correctamente debe ir después de nth-child*/
+table.table4 tbody tr:hover{
+    background-color: rgb(184, 211, 210);
+}
+
+table.table4 th{
+    padding: 7px;
+    text-align: left;
+    border-bottom: 2px rgb(199, 192, 192) solid;
+}
+
+table.table4 td{
+    padding: 7px;
+    border-bottom: 1px solid rgb(199, 192, 192);
+}
+
+
+/*Tabla 5*/
+.table5{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.table5 tbody tr:nth-child(odd){
+    background-color: rgb(235, 231, 231);
+}
+
+table.table5 th{
+    color: white;
+    background-color: rgb(65, 59, 59);
+    padding: 7px;
+    text-align: left;
+    border-bottom: 2px rgb(199, 192, 192) solid;
+}
+
+table.table5 td{
+    padding: 7px;
+    border-bottom: 1px solid rgb(199, 192, 192);
+}

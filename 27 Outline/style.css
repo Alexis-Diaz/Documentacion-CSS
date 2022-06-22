@@ -1,0 +1,56 @@
+.outline{
+    border: 5px solid black;
+    outline: 10px solid rgb(243, 10, 10);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.dotted{
+    outline: 10px dotted rgb(114, 13, 30);
+    margin-bottom: 40px;
+}
+
+.dashed{
+    outline: 10px dashed rgb(114, 13, 30);
+    margin-bottom: 40px;
+}
+
+.solid{
+    outline: 10px solid rgb(114, 13 , 30);
+    margin-bottom: 40px;
+}
+
+.double {
+    outline: 10px double rgb(114, 13, 30);
+    margin-bottom: 40px;
+}
+
+.groove{
+    outline: 10px groove rgb(114, 13 , 30);
+    margin-bottom: 40px;
+}
+
+.ridge {
+    outline: 10px ridge rgb(114, 13 , 30);
+    margin-bottom: 40px;
+}
+
+.inset {
+    outline: 10px inset rgb(114, 13, 30);
+    margin-bottom: 40px;
+}
+
+.outset{
+    outline: 10px outset rgb(114, 13 , 30);
+    margin-bottom: 40px;
+}
+
+.none{
+    outline-style: none;
+    margin-bottom: 40px;
+}
+
+.hidden{
+    outline-style: hidden;
+}

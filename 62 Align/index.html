@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Alineacion horizontal y vertical</h1>
+    <h2>Alineación central</h2>
+    <p>
+        Para centrar horizontalmente un elemento de bloque 
+        (como &LT;div&gt;), use margin: auto;
+
+        Establecer el ancho del elemento evitará que se 
+        estire hasta los bordes de su contenedor.
+            
+        A continuación, el elemento ocupará el ancho 
+        especificado y el espacio restante se dividirá 
+        en partes iguales entre los dos márgenes:
+
+        <b>Nota: </b>Si no se establece un ancho margin:auto
+        no funcionará.
+    </p>
+    <div class="center">
+        div con 60% de ancho con respecto a la pantalla<br>
+        El 40% lo reparte entre margin derecho e izquierdo.
+        <p class="parrafo">parrafo</p>
+    </div>
+
+
+    <h2>Imagen centrada</h2>
+
+    <p>
+        Para centrar la imagen se pasa su display a block y
+        luego se establece el margen izquierdo y derecho en 
+        auto.
+    </p>
+    
+    <img src="../public/img/megaman.png" style="width: 40%;">
+
+
+
+
+    <h2>Alineacion derecha</h2>
+    <p>Usando la propiedad position:absolute</p>
+    <div class="right">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adip
+            isicing elit. Ipsa porro minima perspiciat
+            is quo laboriosam! Nisi repellat dolorem c
+            um similique deleniti neque corporis accusa
+            mus eaque sunt a, hic eos enim fugiat.
+        </p>
+    </div>
+
+    <h2 style="margin-top: 200px;">Alineacion derecha</h2>
+    <p>Usando la propiedad float:right</p>
+    <div class="float-right">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adip
+            isicing elit. Ipsa porro minima perspiciat
+            is quo laboriosam! Nisi repellat dolorem c
+            um similique deleniti neque corporis accusa
+            mus eaque sunt a, hic eos enim fugiat.
+        </p>
+    </div>
+
+
+
+
+</body>
+</html>

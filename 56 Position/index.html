@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body style="padding-left:20px; padding-right:20px;">
+    <h1>Position</h1>
+    <p>
+        La propiedad position especifica el tipo de método 
+        de posicionamiento utilizado para un elemento 
+        (estatic, relative, fixed, absolute o sticky).
+    </p>
+    <p>
+        Luego, los elementos se colocan utilizando las 
+        propiedades superior, inferior, izquierda y 
+        derecha. Sin embargo, estas propiedades no 
+        funcionarán a menos que position se establezca 
+        primero. También funcionan de forma diferente 
+        según el valor de la posición.
+    </p>
+
+
+
+    <h2>position:static</h2>
+    <p>
+        Los elementos HTML se colocan estáticos de forma predeterminada.
+
+        Los elementos de posición estática no se ven 
+        afectados por las propiedades superior, inferior, 
+        izquierda y derecha.
+
+        Un elemento con position: static;no se posiciona 
+        de ninguna manera especial; siempre se posiciona 
+        de acuerdo con el flujo normal de la página:
+    </p>
+    <div id="divStatic">Elemento div static</div>
+
+
+    <h2>position:relative</h2>
+    <p>
+        Un elemento con position: relative;está posicionado 
+        en relación con su posición normal.
+
+        Establecer las propiedades superior, derecha, 
+        inferior e izquierda de un elemento en una posición 
+        relativa hará que se ajuste lejos de su posición 
+        normal. El resto del contenido de la pagina
+        no se ajustará para encajar en ningún espacio dejado 
+        por el elemento.
+    </p>
+    <div id="divRelative">Elemento div relative</div>
+    
+
+    <h2>position:fixed</h2>
+    <p>
+        Un elemento con position: fixed;está posicionado 
+        en relación con la ventana gráfica, lo que significa 
+        que siempre permanece en el mismo lugar incluso si 
+        se desplaza la página. Las propiedades superior, 
+        derecha, inferior e izquierda se utilizan para 
+        colocar el elemento.
+
+        Un elemento fijo no deja un hueco en la página donde 
+        normalmente se habría ubicado.
+
+        Observe el elemento fijo en la esquina inferior 
+        derecha de la página. Aquí está el CSS que se utiliza:
+    </p>
+
+    <div id="divFixed">Elemento div fixed</div>
+
+
+    <h2>position:absolute</h2>
+    <p>
+        Un elemento con position: absolute;está posicionado
+        en relación con el antepasado posicionado más 
+        cercano (en lugar de posicionado en relación 
+        con la ventana gráfica, como fijo).
+
+        Sin emabargo; si un elemento de posición absoluta 
+        no tiene antepasados ​​de posición, utiliza el cuerpo 
+        del documento y se mueve junto con el desplazamiento 
+        de la página.
+
+        Nota: Un elemento "posicionado" es aquel cuya 
+        posición es cualquier cosa excepto static.
+
+        A continuación, se muestra un ejemplo sencillo:
+    </p>
+    <div id="divRelative2">
+        Este div tiene posicion relativa
+        <div id="divAbsolute">Este div tiene posicion absoluta</div>
+    </div>
+
+
+    <h2>position:sticky (pagajosa)</h2>
+    <p>
+        Un elemento con position: sticky;se posiciona según 
+        la posición de desplazamiento del usuario.
+
+        Un elemento sticky alterna entre relative y fixed, 
+        según la posición de desplazamiento. Se coloca en 
+        una posición relativa hasta que se alcanza una 
+        posición de desplazamiento determinada en la ventana 
+        gráfica, luego se "pega" en su lugar (como 
+        la posición: fija).
+    </p>
+    <div id="divSticky">Elemento div sticky</div>
+    <br><br>
+    
+
+    <h2>Elementos superpuestos</h2>
+    <p>
+        Cuando se colocan elementos, pueden superponerse a 
+        otros elementos cuando modificamos su position en 
+        relative, absolute, fixed o sticky. <b>Nota: </b>
+        Lo anterior no aplica para position:static. Ellos 
+        siempre queda abajo de las demás posiciones. 
+        Observar por ejemplo el elemento div sticky que 
+        pasa por encima de los elementos que están después 
+        de él, pero no así del div que contiene la imagen
+        de megaman ya que tienen
+        position relative. La imagen pasa abajo porque recordemos
+        que tiene un z-index: -1;.<br>
+        Cuando agregamos elementos html estos se sobreponen
+        respetando el orden en que se encuentran. Por ejemplo
+        el elemento que se encuentra en la segunda posición 
+        se sobrepondrá al primero, pero se colocará abajo del 
+        tercero parecido a escamas del pescado.
+    </p>
+    <img src="../public/img/superposicion.jpg" width="500px">
+    <p>
+        La propiedad <b>z-index</b> especifica el orden de pila de 
+        un elemento (qué elemento debe colocarse delante o 
+        detrás de los demás).
+
+        Un elemento puede tener un orden de pila positivo o 
+        negativo:
+    </p>
+   <div class="contenedor">
+        <h3 id="titulo">Este es un titulo h3</h3>
+        <img class="position-absolute" src="../public/img/megaman.png">
+   </div>
+
+    <br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

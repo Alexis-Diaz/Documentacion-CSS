@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body style="padding-left: 20px; padding-right:20px;">
+    <h1>Display:inline-block</h1>
+    <p>
+        En comparación con display: inline, la principal
+        diferencia es que display: inline-block permite 
+        establecer un ancho y un alto en el elemento.
+    </p>
+    <p>
+        Además, display: inline-block se respetan los 
+        márgenes / rellenos superior e inferior, pero 
+        display: inline no.
+        <b>Nota: </b>Aunque inline no aplica ancho y alto
+        si aplica relleno, aunque este no afecta el interlineado
+        del texto en el que se encuentra.
+    </p>
+    <p>
+        En comparación con display: block, la principal 
+        diferencia es que display: inline-block no agrega 
+        un salto de línea después del elemento, por lo que 
+        el elemento puede sentarse junto a otros elementos.
+    </p>
+    <p>
+        El siguiente ejemplo muestra el comportamiento 
+        diferente de display: inline, display: inline-block 
+        y display: block:
+    </p>
+
+
+    <h2>display:inline</h2>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit. Quas, dicta quisquam fugit magnam corporis do
+        loribus voluptate Lorem ipsum dolor sit amet conse
+        <span class="a">span con algo de texto</span> 
+        <span class="a">span con algo de texto</span>
+        cumque pariatur placeat enim aute Lorem ipsum dolor 
+        m repellendus eos culpa eum. Repellat soluta offic
+        ia sequi quo.
+    </div>
+
+
+    <h2>display:inline-block</h2>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit. Quas, dicta quisquam fugit magnam corporis do
+        loribus voluptate Lorem ipsum dolor sit amet conse
+        <span class="b">span con algo de texto</span>
+        <span class="b">span con algo de texto</span> 
+        cumque pariatur placeat enim aute Lorem ipsum dolor 
+        m repellendus eos culpa eum. Repellat soluta offic
+        ia sequi quo.
+    </div>
+    
+
+    <h2>display:block</h2>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit. Quas, dicta quisquam fugit magnam corporis do
+        loribus voluptate Lorem ipsum dolor sit amet conse
+        <span class="c">span con algo de texto</span>
+        <span class="c">span con algo de texto</span> 
+        cumque pariatur placeat enim aute Lorem ipsum dolor 
+        m repellendus eos culpa eum. Repellat soluta offic
+        ia sequi quo.
+    </div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+/*La propiedad box-sizing nos permite incluir el relleno y 
+el borde en el ancho (y alto) total de la caja, 
+asegurándonos de que el relleno permanezca dentro de la caja 
+y que no se rompa.*/
+/*-----configuracion general*/
+*{
+    box-sizing: border-box;
+}
+
+.clearfix{
+    border: 2px solid rgb(241, 39, 39);
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+/*---------cuadriculas-----------*/
+.div1{
+    border: 2px solid black;
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+}
+
+
+/*--------imagenes-------------*/
+.img-container{
+    border:2px green solid;
+    float:left;
+    padding: 7px;
+    width: 33.33%;
+}
+/*-------cuadriculas altos iguales------*/
+.div2{
+    border: 2px solid black;
+    float: left;
+    width: 50%;
+    height: 300px;
+    padding: 20px;
+}
+
+
+
+
+
+
+/*-------cuadriculas con flexbox-----------*/
+.flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: dodgerblue;
+}
+
+.div3{
+    background-color: #f1f1f1;
+    width: 50%;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+/*-------Barra de navegacion-----*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li{
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #111;
+}
+
+.active{
+    background-color: red;
+}

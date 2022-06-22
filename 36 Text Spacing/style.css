@@ -1,0 +1,30 @@
+.text-indent{
+    text-indent: 50px;
+    padding: 8px;
+    background-color: rgb(209, 230, 248);
+}
+
+.letter-spacing{
+    letter-spacing: 2px;
+    padding: 8px;
+    background-color: rgb(209, 230, 248);
+}
+
+.line-height{
+    /* line-height: 30px; */
+    line-height: 1.8;
+    padding: 8px;
+    background-color: rgb(209, 230, 248);
+}
+
+.word-spacing{
+    word-spacing: 5px;
+    padding: 8px;
+    background-color: rgb(209, 230, 248);
+}
+
+.white-space{
+    white-space: nowrap;/*De lo que entiendo esta propiedad impide que el texto sea ajustado a la ventana por el navegador*/
+    padding: 8px;
+    background-color: rgb(209, 230, 248);
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body style="padding: 10px;">
+    <h1>CSS List</h1>
+    <p>En Html hay dos tipos de listas:</p>
+    <h2>Listas desordenadas</h2>
+    <p>
+        Para crear listas desordendas se usa la etiqueta
+        &lt;ul&gt;. A estas listas usando la propiedad
+        list-style-type de CSS se puede
+        cambiar el simbolo que le acompaña.
+    </p>
+    <p>
+        Hay tres formas diferentes:
+        <ul>
+            <li>por defecto (circulo lleno)</li>
+            <li>disc (circulo lleno)</li>
+            <li>circle (circulo vacio)</li>
+            <li>square (cuadro lleno)</li>
+            <li>none (ninguno)</li>
+        </ul>
+        Ejemplo:
+    </p>
+    <ul>
+        <li>por defecto</li>
+        <li>por defecto</li>
+        <li>por defecto</li>
+        <li>por defecto</li>
+    </ul>
+    <ul class="disc">
+        <li>disc</li>
+        <li>disc</li>
+        <li>disc</li>
+        <li>disc</li>
+    </ul>
+    <ul class="circle">
+        <li>circle</li>
+        <li>circle</li>
+        <li>circle</li>
+        <li>circle</li>
+    </ul>
+    <ul class="square">
+        <li>square</li>
+        <li>square</li>
+        <li>square</li>
+        <li>square</li>
+    </ul>
+    <ul class="none">
+        <li>none</li>
+        <li>none</li>
+        <li>none</li>
+        <li>none</li>
+    </ul>
+
+
+
+    <h2>Listas ordenadas</h2>
+    <p>
+        Para crear listas ordenadas se usa la etiqueta 
+        &lt;ol&gt;.<br>
+        Para ver otra forma de agregar tipos de numeraciones
+        solo con propiedasdes HTML revisar las listas de HTML
+        donde hay ejemplos.<br>
+        Por defecto las listas son númericas empezando por 
+        1 en adelante. Sin embargo esto se puede cambiar desde 
+        CSS, por ejemplo hacer que sean numeros romanos o letras
+        del alfabeto. Ejemplo:
+    </p>
+    <ol>
+        <li>por defecto</li>
+        <li>por defecto</li>
+        <li>por defecto</li>
+    </ol>
+    <ol class="upper-roman">
+        <li>numeros romanos en mayusculas</li>
+        <li>numeros romanos en mayusculas</li>
+        <li>numeros romanos en mayusculas</li>
+    </ol>
+    <ol class="lower-roman">
+        <li>numeros romanos en minusculas</li>
+        <li>numeros romanos en minusculas</li>
+        <li>numeros romanos en minusculas</li>
+    </ol>
+    <ol class="upper-alpha">
+        <li>alfabeto en mayusculas</li>
+        <li>alfabeto en mayusculas</li>
+        <li>alfabeto en mayusculas</li>
+    </ol>
+    <ol class="lower-alpha">
+        <li>lower-alpha (alfabeto en minusculas)</li>
+        <li>lower-alpha (alfabeto en minusculas)</li>
+        <li>lower-alpha (alfabeto en minusculas)</li>
+    </ol>
+    <ol class="none">
+        <li>none (ninguno)</li>
+        <li>none (ninguno)</li>
+        <li>none (ninguno)</li>
+    </ol>
+    <br>
+
+
+    <h2>Usando imagen como marcador</h2>
+    <ol class="listImage">
+        <li>Usando imagen</li>
+        <li>Usando imagen</li>
+        <li>Usando imagen</li>
+    </ol>
+
+
+
+    <h1>Posición de la viñeta</h1>
+    <h2>list-style-position: outside (por defectp):</h2>
+    <p>
+        La viñeta como se aprecia queda fuera de la alineación 
+        del texto.
+    </p>
+    <ul class="outside">
+      <li>Coffee - A brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant</li>
+      <li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to Asia</li>
+      <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
+    </ul>
+    
+    <h2>list-style-position: inside:</h2>
+    <p>
+        La viñeta es parte de la alineación del texto y por lo tanto
+        lo empuja hacia adentro.
+    </p>
+    <ul class="inside">
+      <li>Coffee - A brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant</li>
+      <li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to Asia</li>
+      <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
+    </ul>
+    
+
+    <h2>Listas con colores</h2>
+    <ol class="listaOrdenadaConColores">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+      
+    <ul class="listaDesordenadaConColores">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+      
+</body>
+</html>

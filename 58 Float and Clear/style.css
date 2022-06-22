@@ -1,0 +1,56 @@
+#div1{
+    border: solid 1px blue;
+    max-width: 600px;
+    padding: 5px;
+}
+#img1{
+    border: solid 2px green;
+    float: right;
+    width: 200px;
+    margin-left: 20px;
+}
+
+
+
+#div2{
+    border: solid 1px blue;
+    max-width: 600px;
+}
+#img2{
+    border: solid 2px green;
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+}
+
+
+
+#div3{
+    border: solid 1px blue;
+    max-width: 600px;
+}
+#img3{
+    border: solid 2px green;
+    float: none;
+    width: 200px;
+    margin-right: 20px;
+}
+
+
+
+.div-float-left{
+    float: left;
+    padding: 15px;
+}
+#div4{
+    background-color: rgb(43, 189, 62);
+}
+#div5{
+    background-color: rgb(225, 228, 43);
+}
+#div6{
+    background-color: rgb(221, 56, 56);
+}
+#div7{
+    background-color: rgb(82, 98, 240);
+}

@@ -1,0 +1,46 @@
+body{
+    font-family:'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+}
+
+
+.enlacePersonalizado1{
+    color:hotpink;
+}
+
+/*Se debe respetar este orden al usar los 4 estados*/
+.enlacePersonalizado2:link{
+    color: rebeccapurple;
+}
+
+.enlacePersonalizado2:visited{
+    color: green;
+}
+
+.enlacePersonalizado2:hover{
+    color: hotpink;
+}
+
+.enlacePersonalizado2:active{
+    color: royalblue;
+}
+
+/*Diseño de boton*/
+.enlacePersonalizado3{
+    border: solid green 1px;
+    padding: 5px;
+    background-color: rgb(106, 231, 93);
+    text-decoration: none;
+    color: green
+}
+
+.enlacePersonalizado3:hover{
+    border: solid 1px rgb(106, 231, 93);
+    background-color: green;
+    text-decoration: none;
+    color: rgb(106, 231, 93);
+}
+
+.enlacePersonalizado3:active{
+    padding: 7px;
+}

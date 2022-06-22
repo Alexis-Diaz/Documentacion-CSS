@@ -1,0 +1,49 @@
+/*----------------paginacion1---------------------------*/
+div.pagination1 a.link1{
+    border: 1px solid rgb(120,120,120);
+    padding: 15px;
+    float: left;
+    text-decoration: none;
+    background-color: rgb(85, 83, 83);
+    color: white;
+    font-size: 20px;
+    margin-left: 3px;
+    transition: background-color 0.5s;
+}
+
+div.pagination1 a.link1.active1{
+    background-color: rgb(204, 196, 196);
+    color: black;
+}
+
+a.link1:hover:not(.active1){
+    background-color: rgb(122, 122, 179);
+}
+
+/*----------------paginacion2-------------------------*/
+div.center2{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.pagination2 a.link2{
+    border: 1px solid rgb(130,130,130);
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(47, 54, 117);
+    padding: 15px;
+    float: left;
+    width: 12.5%;
+    box-sizing: border-box;
+}
+
+div.pagination2 a.link2.active2{
+    background-color: rgb(117, 117, 161);
+}
+
+div.pagination2 a.link2:hover:not(.active2){
+    background-color: rgb(108, 108, 219);
+}

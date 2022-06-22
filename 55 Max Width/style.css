@@ -1,0 +1,13 @@
+#div1{
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    border: solid 1px blue;
+}
+
+#div2{
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    border: solid 1px blue;
+}

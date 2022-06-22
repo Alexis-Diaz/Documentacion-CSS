@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body style="padding: 10px;">
+    <h1>Modelo de caja</h1>
+    <p>
+        En CSS, el término "modelo de caja" se utiliza cuando
+        se habla de diseño y maquetación.
+
+        El modelo de caja CSS es esencialmente una caja que 
+        envuelve cada elemento HTML. Consiste en: márgenes, 
+        bordes, relleno y el contenido real. La siguiente 
+        imagen ilustra el modelo de caja:
+    </p>
+    <img src="../public/img/Model Box.jpg">
+    <p><b>Ejemplo:</b></p>
+    <div>Este es el contenido</div>
+
+    <h2>Ancho y alto de un elemento</h2>
+    <p>
+        Para establecer correctamente el ancho y alto de 
+        un elemento en todos los navegadores, necesita saber 
+        cómo funciona el modelo de caja.
+    </p>
+    <p>
+        <b>Importante:</b> cuando establece las propiedades de 
+        ancho y alto de un elemento con CSS, simplemente 
+        establece el ancho y alto del área de contenido .
+        Para calcular el tamaño completo de un elemento, 
+        también debe agregar relleno, bordes y márgenes.
+    </p>
+    <div>
+        Cálculo del ancho de este elemento:<br>
+        <ul>
+            <li>Ancho del contenido: 300 pixeles</li>
+            <li>Ancho del padding derecho: 50 pixeles</li>
+            <li>Ancho del padding izquierdo: 50 pixeles</li>
+            <li>Ancho del borde derecho: 15 pixeles</li>
+            <li>Ancho del borde izquierdo: 15 pixeles</li>
+            <li>Ancho de margen derecho: 20 pixeles</li>
+            <li>Ancho de margen izquierdo: 20 pixeles</li>
+            <li>Total de ancho: 470 pixeles</li>
+        </ul>
+    </div>
+</body>
+</html>

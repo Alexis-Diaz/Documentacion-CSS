@@ -1,0 +1,35 @@
+#div1{
+    width: 200px;
+    height: 70px;
+    background-color: rgb(197, 203, 204);
+    overflow: visible;
+}
+
+#div2{
+    width: 200px;
+    height: 70px;
+    background-color: rgb(197, 203, 204);
+    overflow: hidden;
+}
+
+#div3{
+    width: 200px;
+    height: 70px;
+    background-color: rgb(197, 203, 204);
+    overflow: scroll;
+}
+
+#div4{
+    width: 200px;
+    height: 70px;
+    background-color: rgb(197, 203, 204);
+    overflow: auto;
+}
+
+#div5{
+    width: 200px;
+    height: 70px;
+    background-color: rgb(197, 203, 204);
+    overflow-x: scroll;
+    overflow-y: hidden;
+}

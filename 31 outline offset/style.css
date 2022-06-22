@@ -1,0 +1,6 @@
+.outline{
+    padding: 7px;
+    border: groove 5px purple;
+    outline: dashed 5px goldenrod;
+    outline-offset: 15px;
+}

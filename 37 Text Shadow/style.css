@@ -1,0 +1,19 @@
+.text-shadown1 {
+    text-shadow: 2px 2px;
+}
+
+.text-shadown2{/*el primer px afecta eje "y" y el segundo eje "x"*/
+    text-shadow: 7px 9px rgb(200,200,200);
+}
+
+.text-shadown3{
+    text-shadow: 7px -9px rgb(200,200,200);
+}
+
+/*se puede agregar desenfoque aqui es 5px*/
+.text-shadow4 {
+    text-shadow: 2px 2px 5px red;
+}
+
+
+

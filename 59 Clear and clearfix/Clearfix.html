@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style1.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>El truco de clearfix</h1>
+    <p>
+        Si un elemento es más alto que el elemento que 
+        lo contiene y está flotando, se "desbordará" 
+        fuera de su contenedor:
+    </p>
+
+    <div id="div1">
+        <img id="image1" src="../public/img/megaman.png" width="200px">
+        Lorem ipsum, dolor sit amet consectetur 
+        adipisicing elit. Eveniet, molestias qui. 
+        Quia pariatur ab esse atque quo possimus 
+        quod nostrum sed ipsa laborum similique cum 
+        error voluptatem, voluptatibus asperiores iusto.
+    </div>
+   
+    <div id="div2">
+        <img id="image2" src="../public/img/megaman.png" width="200px">
+        Lorem ipsum, dolor sit amet consectetur 
+        adipisicing elit. Eveniet, molestias qui. 
+        Quia pariatur ab esse atque quo possimus 
+        quod nostrum sed ipsa laborum similique cum 
+        error voluptatem, voluptatibus asperiores iusto.
+    </div>
+    <p>
+        El clearfix overflow: auto  funciona bien siempre 
+        que pueda mantener el control de sus márgenes y 
+        relleno (de lo contrario, es posible que vea 
+        barras de desplazamiento). El nuevo y moderno 
+        corte clearfix sin embargo, es más seguro de usar, 
+        y el siguiente código se utiliza para la mayoría 
+        de las páginas web:
+    </p>
+
+    <div id="div3">
+        <img id="image3" src="../public/img/megaman.png" width="200px">
+        Lorem ipsum, dolor sit amet consectetur 
+        adipisicing elit. Eveniet, molestias qui. 
+        Quia pariatur ab esse atque quo possimus 
+        quod nostrum sed ipsa laborum similique cum 
+        error voluptatem, voluptatibus asperiores iusto.
+    </div>
+    <p>
+        Usando el nueno y moderno clearfix.
+    </p>
+   
+    <div id="div4">
+        <img id="image4" src="../public/img/megaman.png" width="200px">
+        Lorem ipsum, dolor sit amet consectetur 
+        adipisicing elit. Eveniet, molestias qui. 
+        Quia pariatur ab esse atque quo possimus 
+        quod nostrum sed ipsa laborum similique cum 
+        error voluptatem, voluptatibus asperiores iusto.
+    </div>
+    
+</body>
+</html>

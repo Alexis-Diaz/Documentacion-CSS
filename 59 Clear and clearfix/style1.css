@@ -1,0 +1,37 @@
+#div1{
+    border: solid black 1px;
+}
+
+#image1{
+    float: right;
+}
+
+#div2{
+    border: solid black 1px;
+    clear: right;
+    overflow: auto;
+    margin-top: 50px;
+}
+
+#image2{
+    float: right;
+}
+
+/*------------------------------------*/
+#div3, #div4{
+    border: solid black 1px;
+}
+
+#image3{
+    float: right;
+}
+
+#div4::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#image4{
+    float: right;
+}

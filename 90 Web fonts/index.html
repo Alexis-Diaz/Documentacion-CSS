@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>fuentes web</h1>
+    <p>
+        Cuando se necesita usar una fuente que no se encuentre
+        en el navegador del cliente se, o si se desea personalizar
+        una fuente, se puede usar una fuente propia. Para hacerlo
+        se usa la regla CSS <span style="color:red">@font-face</span>
+        esta regla hara que el navegador cliente descargue la fuente
+        que necesita.
+    </p>
+    <h2>Uso</h2>
+    <p>
+        En la @font-face regla; primero defina un nombre 
+        para la fuente (por ejemplo, myFirstFont) y luego 
+        apunte al archivo de fuente.
+
+        Consejo: utilice siempre letras minúsculas para la 
+        URL de la fuente. Las letras mayúsculas pueden dar 
+        resultados inesperados en IE.
+        
+        Para usar la fuente para un elemento HTML, consulte 
+        el nombre de la fuente (myFirstFont) a través de la 
+        font-family propiedad:
+    </p>
+    <p>
+        Por efecto de que no he descargado una fuente solo
+        dejo el codigo css que se utiliza.
+        En @font-face se indica la nueva fuente nombrandola
+        myFirstFont.
+        En * se utiliza la nueva fuente.
+    </p>
+    <p id="parrafo">
+        &lt;style> <br><br>
+            @font-face {<br>
+               font-family: myFirstFont;<br>
+               src: url(sansation_light.woff);<br>
+            }<br><br>
+            
+            * {<br>
+               font-family: myFirstFont;<br>
+            }<br><br>
+        &lt;/style>
+    </p>
+</body>
+</html>

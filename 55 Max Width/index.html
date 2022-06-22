@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body style="padding-left:20px; padding-right:20px;">
+    <h1>max-width</h1>
+    <p>
+        Como se mencionó en el capítulo anterior; un elemento 
+        a nivel de bloque siempre ocupa todo el ancho 
+        disponible (se extiende hacia la izquierda y hacia 
+        la derecha tanto como puede).
+
+        Establecer el width de un elemento a nivel de bloque 
+        evitará que se extienda hasta los bordes de su 
+        contenedor. Luego, puede establecer los márgenes en 
+        automático, para centrar horizontalmente el elemento 
+        dentro de su contenedor. El elemento ocupará el ancho 
+        especificado y el espacio restante se dividirá en 
+        partes iguales entre los dos márgenes:
+    </p>
+    <div id="div1">Elemento div con 500px de ancho y margen auto.</div>
+    <p>
+        <b>Nota:</b> El problema con el div anterior ocurre 
+        cuando la ventana del navegador es más pequeña que 
+        el ancho del elemento. Luego, el navegador agrega 
+        una barra de desplazamiento horizontal a la página.
+
+        El uso max-width en su lugar,
+        mejorará el manejo del navegador de ventanas 
+        pequeñas. Esto es importante al hacer que un 
+        sitio se pueda utilizar en dispositivos pequeños:
+    </p>
+    <div id="div2">Elemento div con 500px de ancho y margen auto.</div>
+
+</body>
+</html>

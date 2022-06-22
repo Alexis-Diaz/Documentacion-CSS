@@ -1,0 +1,35 @@
+/*Table1*/
+table.table1{
+    border:solid 1px rgb(100,100,100);
+    width:100%;
+    border-collapse: collapse;
+}
+
+table.table1 th{
+    border:solid 1px rgb(100,100,100);
+}
+
+table.table1 td{
+    border:solid 1px rgb(100,100,100);
+}
+
+/*Table2*/
+table.table2{
+    font-family:Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border:solid 5px rgb(100,100,100);
+    width:100%;
+    border-collapse: collapse;
+}
+
+table.table2 th{
+    text-align: left;
+    color: white;
+    background-color: rgb(51, 51, 51);
+    padding: 7px;
+    border:solid 4px rgb(100,100,100);
+}
+
+table.table2 td{
+    border:solid 3px rgb(100, 100, 100);
+}

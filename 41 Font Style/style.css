@@ -1,0 +1,27 @@
+.normal{
+    font-style: normal;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.oblique {
+    font-style: oblique;
+}
+
+.normalWeight{
+    font-weight: normal;
+}
+
+.boldWeight{
+    font-weight: bold;
+}
+
+.normalVariant{
+    font-variant: normal;
+}
+
+.small-capsVariant{
+    font-variant: small-caps;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style1.css">
+    <title>Document</title>
+</head>
+<body style="padding-left: 25px; padding-right:25px;">
+    <h1>Ejemplos comunes flotantes</h1>
+    <h2>Cuadrículas de igual ancho</h2>
+    <div class="clearfix">
+        <div class="div1">
+            1Lorem ipsum dolor sit amet consectetur, 
+            elit. Laborum harum quia quasi libero quidem,
+            optio doloribus consequuntur. Inventore nesc
+            iunt temporibus, quam totam laboriosam, vita
+            e quae voluptatum, est odio numquam iure?
+            
+        </div>
+        <div class="div1">
+            2Lorem ipsum dolor sit amet consectetur, 
+            elit. Laborum harum quia quasi libero quidem,
+            optio doloribus consequuntur. Inventore nesc
+            iunt temporibus, quam totam laboriosam, vita
+            e quae voluptatum, est odio numquam iure?
+        </div>
+        <div class="div1">
+            3Lorem ipsum dolor sit amet consectetur, 
+            elit. Laborum harum quia quasi libero quidem,
+            optio doloribus consequuntur. Inventore nesc
+            iunt temporibus, quam totam laboriosam, vita
+            e quae voluptatum, est odio numquam iure?
+        </div>
+    </div>
+
+    <p>
+        <h2>¿Qué es la propiedad box-sizing?</h2>
+
+        Puede crear fácilmente tres cajas flotantes una 
+        al lado de la otra. Sin embargo, cuando agrega 
+        algo que amplía el ancho de cada cuadro (por 
+        ejemplo, relleno o bordes), el cuadro se romperá. 
+        La propiedad box-sizing nos permite incluir el 
+        relleno y el borde en el ancho (y alto) total de 
+        la caja, asegurándonos de que el relleno permanezca 
+        dentro de la caja y que no se rompa.
+    </p>
+
+    <h2>Imagenes una al lado de otra</h2>
+    <p>
+        Hay una forma parecida usando display:inline y float en 
+        la carpeta CSS display.
+    </p>
+
+    <div class="clearfix">
+        <div class="img-container">
+            <img src="../public/img/paisaje1.jpg" style="width:100%; height:100px">
+        </div>
+        <div class="img-container">
+            <img src="../public/img/paisaje2.jpg" style="width:100%; height:100px">
+        </div>
+        <div class="img-container">
+            <img src="../public/img/paisaje3.jpg" style="width:100%; height:100px">
+        </div>
+    </div>
+
+    <h1>Cajas de igual altura</h1>
+    <h2>Usando un alto fijo</h2>
+    <p>
+        En los ejemplo anteriores, las
+        cajas flotan una al lado de la otra con el mismo ancho. 
+        Sin embargo, no es fácil crear cajas flotantes 
+        con alturas iguales. Sin embargo, una solución 
+        rápida es establecer una altura fija, como en el 
+        siguiente ejemplo:
+
+        <b>Nota:</b> El problema de esto es que si se hace
+        la ventana más chica el contenido puede colapsar y
+        verse de manera inesperada. En este caso al llegar
+        a 631 px de ancho, el texto se sale del div que lo 
+        contiene.
+    </p>
+    <div class="clearfix">
+        <div class="div2">
+            Algo de texto. Lorem ipsum dolor 
+            sit, amet consectetur adipisicing elit. Reicie
+            ndis, sit nulla facilis ducimus deserunt ipsum
+            harum ex inventore voluptatum perspiciatis sa
+            epe rem vitae blanditiis quisquam nostrum rec
+            usandae doloribus nihil velit.
+        </div>
+        <div class="div2">
+            Algo de texto. Lorem ipsum dolor sit, amet con
+            sectetur adipisicing elit. Reiciendis, sit nul
+            la facilis ducimus deserunt ipsum harum ex inv
+            entore voluptatum perspiciatis saepe rem vitae
+            blanditiis quisquam nostrum recusandae dolori
+            bus nihil velit.
+            Algo de texto. Lorem ipsum dolor sit, amet con
+            sectetur adipisicing elit. Reiciendis, sit nul
+            la facilis ducimus deserunt ipsum harum ex inv
+            entore voluptatum perspiciatis saepe rem vitae
+            blanditiis quisquam nostrum recusandae dolori
+            bus nihil velit.
+        </div>
+    </div>
+
+    <h2>Usando flexbox</h2>
+    <p>
+        Sin embargo , esto no es muy flexible. Está bien 
+        si puede garantizar que las cajas siempre tendrán 
+        la misma cantidad de contenido. Pero muchas veces 
+        el contenido no es el mismo. Si prueba el ejemplo 
+        anterior en un teléfono móvil, verá que el contenido 
+        del segundo cuadro se mostrará fuera del cuadro. 
+        Aquí es donde CSS3 Flexbox resulta útil, ya que puede 
+        estirar automáticamente los cuadros para que sean tan 
+        largos como el cuadro más largo:
+    </p>
+    <div class="flex-container">
+        <div class="div3">
+            Algo de texto. Lorem ipsum dolor 
+            sit, amet consectetur adipisicing elit. Reicie
+            ndis, sit nulla facilis ducimus deserunt ipsum
+            harum ex inventore voluptatum perspiciatis sa
+            epe rem vitae blanditiis quisquam nostrum rec
+            usandae doloribus nihil velit.
+        </div>
+        <div class="div3">
+            <strong>Flexbox no es soportado en Internet Explorer 10
+            o versiones anteriores.</strong> Lorem ipsum dolor sit, amet con
+            sectetur adipisicing elit. Reiciendis, sit nul
+            la facilis ducimus deserunt ipsum harum ex inv
+            entore voluptatum perspiciatis saepe rem vitae
+            blanditiis quisquam nostrum recusandae dolori
+            bus nihil velit.
+            Algo de texto. Lorem ipsum dolor sit, amet con
+            sectetur adipisicing elit. Reiciendis, sit nul
+            la facilis ducimus deserunt ipsum harum ex inv
+            entore voluptatum perspiciatis saepe rem vitae
+            blanditiis quisquam nostrum recusandae dolori
+            bus nihil velit.
+        </div>
+    </div>
+
+    <h2>Menú de navegación</h2>
+    <p>
+        Úse float con una lista de hipervínculos para 
+        crear un menú horizontal:
+    </p>
+    <ul>
+        <li><a class="active">Home</a></li>
+        <li><a>News</a></li>
+        <li><a>Contact</a></li>
+        <li><a>About</a></li>
+    </ul>
+</body>
+</html>

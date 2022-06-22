@@ -1,0 +1,28 @@
+#container-table{
+    overflow-x:auto;
+}
+
+.table1{
+    border-collapse: collapse;
+}
+
+/*efecto striped para la tabla*/
+table.table1 tr:nth-child(even){
+    background-color: rgb(247, 244, 244);
+}
+
+table.table1 th{
+    border: 1px solid rgb(10,10,10);
+    text-align: left;
+    font-size: 18px;
+    font-family:Helvetica, sans-serif;
+    padding: 7px;
+    background-color: rgb(56, 56, 55);
+    color: white;
+}
+
+table.table1 td{
+    border: 1px solid rgb(10,10,10);
+    font-size: 17px;
+    padding: 7px;
+}

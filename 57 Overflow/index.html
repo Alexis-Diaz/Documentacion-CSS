@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Overflow</h1>
+    <p>
+        La propiedad overflowCSS controla lo que sucede 
+        con el contenido que es demasiado grande para 
+        caber en un área.
+    </p>
+    <p>
+        La overflowpropiedad especifica si recortar el 
+        contenido o agregar barras de desplazamiento 
+        cuando el contenido de un elemento es demasiado 
+        grande para caber en el área especificada.
+
+        La overflowpropiedad tiene los siguientes valores:
+        <ul style="list-style-type: square">
+            <li>
+                <b>Visible: </b>Defecto. El desbordamiento 
+                no está recortado. El contenido se renderiza 
+                fuera de la caja del elemento.
+            </li>
+            <li>
+                <b>hidden: </b>El desbordamiento se recorta y
+                el resto del contenido será invisible.
+            </li>
+            <li>
+                <b>scroll: </b> Se recorta el desbordamiento 
+                se agrega una barra de desplazamiento para
+                ver el resto del contenido.
+            </li>
+            <li>
+                <b>auto: </b>Similar a scroll, pero agrega 
+                barras de desplazamiento solo cuando es 
+                necesario.
+            </li>
+        </ul>
+    </p>
+    <p>
+        <b>Nota:</b> La propiedad overflow solo funciona para 
+        elementos de bloque con una altura especificada.
+
+        <b>Nota:</b> En OS X Lion (en Mac), las barras de 
+        desplazamiento están ocultas de forma predeterminada 
+        y solo se muestran cuando se utilizan (aunque 
+        "overflow: scroll" está configurado).
+    </p>
+
+    <h2>overflow:visible</h2>
+    <p>
+        De forma predeterminada, el desbordamiento es visible, 
+        lo que significa que no está recortado y se renderiza 
+        fuera de la caja del elemento:
+    </p>
+    <br>
+    <div id="div1">
+        Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit. Pariatur, accusamus. Asperiores sunt eos 
+        iure nobis quia pariatur quis consequuntur sed, 
+        hic, numquam aliquam vel et animi! Eum quidem 
+        consequatur reprehenderit?
+    </div>
+    <br><br><br><br><br><br><br><br>
+    
+    <h3>overflow:hidden</h3>
+    <p>
+        Con el valor hidden, se recorta el desbordamiento 
+        y se oculta el resto del contenido:
+    </p>
+    <div id="div2">
+        Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit. Pariatur, accusamus. Asperiores sunt eos 
+        iure nobis quia pariatur quis consequuntur sed, 
+        hic, numquam aliquam vel et animi! Eum quidem 
+        consequatur reprehenderit?
+    </div>
+
+    
+
+    <h2>overflow:scroll</h2>
+    <p>
+        Al establecer el valor en scroll, el desbordamiento 
+        se recorta y se agrega una barra de desplazamiento 
+        para desplazarse dentro del cuadro. Tenga en cuenta 
+        que esto agregará una barra de desplazamiento tanto 
+        horizontal como verticalmente (incluso si no la 
+        necesita):
+    </p>
+    <div id="div3">
+        Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit. Pariatur, accusamus. Asperiores sunt eos 
+        iure nobis quia pariatur quis consequuntur sed, 
+        hic, numquam aliquam vel et animi! Eum quidem 
+        consequatur reprehenderit?
+    </div>
+
+
+    <h2>overflow:auto</h2>
+    <p>
+        El autovalor es similar a scroll, pero agrega 
+        barras de desplazamiento solo cuando es necesario:
+    </p>
+    <div id="div4">
+        Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit. Pariatur, accusamus. Asperiores sunt eos 
+        iure nobis quia pariatur quis consequuntur sed, 
+        hic, numquam aliquam vel et animi! Eum quidem 
+        consequatur reprehenderit?
+    </div>
+
+    <h2>overflow-x y overflow-y</h2>
+    <p>
+        Las propiedades overflow-xy overflow-yespecifican 
+        si se debe cambiar el desbordamiento de contenido 
+        solo horizontal o verticalmente (o ambos):
+
+        overflow-xespecifica qué hacer con los bordes 
+        izquierdo / derecho del contenido.
+        overflow-yespecifica qué hacer con los bordes 
+        superior / inferior del contenido.
+    </p>
+
+    <div id="div5">
+        Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit. Pariatur, accusamus. Asperiores sunt eos 
+        iure nobis quia pariatur quis consequuntur sed, 
+        hic, numquam aliquam vel et animi! Eum quidem 
+        consequatur reprehenderit?
+    </div>
+</body>
+</html>

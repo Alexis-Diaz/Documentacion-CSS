@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>clear and clearfix</h1>
+    <h2>Clear</h2>
+    <p>
+        La propiedad clear especifica qué elementos pueden 
+        flotar junto al elemento despejado y en qué lado.
+
+        La propiedad clear puede tener uno de los siguientes 
+        valores:
+        <uL>
+
+            <li><b>none: </b>permite elementos flotantes en ambos lados. 
+                Esto es predeterminado.
+            
+            </li>
+            <li><b>left: </b>no se permiten elementos flotantes en el lado 
+                izquierdo.
+            
+            </li>
+            <li><b>right: </b>No se permiten elementos flotantes en el lado 
+                derecho.
+            
+            </li>
+            <li><b>both: </b>no se permiten elementos flotantes ni en el 
+                lado izquierdo ni en el derecho.
+            
+            </li>
+            <li><b>inherit: </b>el elemento hereda el valor clear de su 
+                padre.
+            
+            </li>
+        </uL>
+    </p>
+    <p>
+        La forma más común de usar la propiedad clear es 
+        después de haber usado una propiedad float en un 
+        elemento.
+
+        En lo que he podido observar la propiedad clear sirve 
+        para que un elemento no tenga elementos con propiedad
+        float montados sobre él.
+    </p>
+    <p>
+        Sin clear el div1 flota, el div2 toma el nuevo lugar
+        quedando debajo de div1.
+    </p>
+    <div id="div1">div1</div>
+    <div id="div2">div2</div>
+    <p>
+        En la siguiente imagen se aprecia como funciona el float:left. Vemos que 
+        se monta sobre el elemento que le sigue. Esto sucede porque al parecer
+        literalmente es como si el elemento se elevara sobre
+        su mismo lugar y el espacio que ocupa queda disponible para
+        el siguiente elemento.
+    </p>
+    <img src="../public/img/floar-left.png" width="350px">
+   
+   
+    <p>
+        El siguiente ejemplo borra el flotador de la 
+        izquierda. Significa que no se permiten elementos 
+        flotantes en el lado izquierdo por lo que el div 
+        hace un salto de linea (ver div4).
+    </p>
+    
+    <p>Ejemplo: </p>
+    <p>Sin clear</p>
+    <div id="div1">div1</div>
+    <div id="div2">div2</div><br><br>
+
+    <p>Con clear</p>
+    <div id="div3">div3</div>
+    <div id="div4">div4</div>
+</body>
+</html>
