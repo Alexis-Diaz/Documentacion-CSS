@@ -1,0 +1,13 @@
+/*El selector universal (*) selcciona todos los elementos HTML
+de la pagina
+
+
+Ejemplo: La siguiente regla  CSS afectará a todos los elementos de
+la pagina.
+*/
+
+* {
+    color:darkcyan;
+    font-size: 25px;
+    text-align: center;
+}

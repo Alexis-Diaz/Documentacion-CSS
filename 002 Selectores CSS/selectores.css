@@ -59,6 +59,13 @@ p {
     text-align: center;
 }
 
+
+
+
+
+
+
+
 /*
 COMBINACION DE SELECTORES SIMPLES
 Se pueden combinar los selectores para poder especificar
@@ -94,7 +101,7 @@ debe tener la siguiente estructura:
 .Clase, .clase {cuerpo de la declaracion}
 
 */
-.fresa,.pera{
+.fresa, .pera{
  color: darkgoldenrod;
  text-align: right;
  line-height: 0px;
