@@ -1,0 +1,81 @@
+/*
+La propiedad CSS Display es la más importante para controlar
+el diseño de la pagina web.
+
+La propiedad Display especifica si se muestra o cómo se muestra
+el elemento HTML.
+
+Cada elemento HTML tiene un valor de visualización predeterminado
+segun el tipo de elemento que sea. El valor de visualización pre-
+determinado para la mayoría de elementos es block o inline
+
+
+ELEMENTO A NIVEL DE BLOQUE
+
+Un elemento a nivel de bloque siempre comienza en una nueva linea
+y ocupa todo el ancho disponible (se extiende hacia la izquierda y
+derecha tanto como sea posible).
+
+Ejemplos de elementos que display: block por defecto:
+    <div>
+    <h1>...<h6>
+    <p>
+    <form>
+    <header>
+    <footer>
+    <section>
+
+
+ELEMENTOS EN LINEA
+
+Un elemento en linea no comienza una nueva linea y solo ocupa el
+ancho necesario en funcion de su contenido. Ejemplos de elementos
+que son display: inline por defecto: 
+
+    <span>
+    <a>
+    <img>
+
+
+OCULARA ELEMENTOS CON DISPLAY:NONE O VISIBILITY:HIDDEN
+
+Con la propiedad display: none, se puede ocultar un elemento y no ser
+visible en la pantalla. En este caso el elementos no se destruye pero
+este estilo hace como que elemento no existiera y por tanto no afecta
+al diseño de la página web. Un elemento que se oculte cambiando su
+display a "none" hará que todos los elementos de la página se reordenen.
+
+Cuando se usa la propiedad visibily:hidden hace que elemento se oculte
+pero el espacio siempre lo sigue utilizando, por tanto afecta el diseño
+de la página.
+
+    NOTA: Para ver los ejemplos en acción se debe abrir con el navegador 
+    el archivo display.html
+*/
+
+
+
+.contorno{
+    border: 4px green solid;
+    padding:7px;
+}
+
+.verBlock{
+    display: block;
+}
+
+.verInline{
+    display: inline;
+}
+
+/*Imagenes finales*/
+.tarjeta{
+    float: left;
+    margin: 10px;
+}
+
+img{
+    width: 250px;
+    height: 150px;
+}
+

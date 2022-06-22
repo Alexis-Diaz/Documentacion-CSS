@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./display.css">
     <title>Document</title>
 </head>
 <body style="padding-left:20px; padding-right:20px;">
+
     <h1>Propiedad Display CSS</h1>
     <p>
         La propiedad display es la propiedad CSS más importante 
@@ -29,19 +27,18 @@
     <p>
         Un elemento a nivel de bloque siempre comienza en una
         nueva línea y ocupa todo el ancho disponible (se 
-        extiende hacia la izquierda yu derecha tanto como
+        extiende hacia la izquierda y derecha tanto como
         puede.).<br> A continuación se muestra algunos
         elementos con un display:block por defecto.
         Ejemplo:
     </p>
 
     <div class="contorno">
-        La etiqueta &lt;div&gt; es un ejemplo de elemento a 
-        nivel de bloque
+        Etiqueta &lt;div&gt;
     </div>
 
     <h3 class="contorno">
-        Etiqueta&lt;h3&gt;. Todas las etiquetas &lt;h#&gt; son a nivel de bloque.
+        Etiqueta&lt;h3&gt;. Todas las etiquetas &lt;h#&gt; se muestran como bloque.
     </h3>
 
     <p class="contorno">
@@ -50,20 +47,25 @@
 
     <ul class="contorno">
         Elemento &lt;ul&gt;.
+        <li class="contorno">elemento &lt;li&gt;</li><br><!--No margen entre estos elementos-->
         <li class="contorno">elemento &lt;li&gt;</li>
     </ul>
+
     <form action="" class="contorno">
         Elemento &lt;form&gt;
     </form>
-    <br>
+
+    <br><!--Despues del form no existe margen entre elementos-->
     <header class="contorno">
         Elemento &lt;header&gt;.
     </header>
-    <br>
+    
+    <br><!--Despues del header no existe margen entre elementos-->
     <footer class="contorno">
         Elemento &lt;footer&gt;.
     </footer>
-    <br>
+    
+    <br><!--Despues del footer no existe margen entre elementos-->
     <section class="contorno">
         Elemento &lt;section&gt;.
     </section>
@@ -75,15 +77,20 @@
 
     <h2>Display:inline</h2>
     <p>
-        Un elemento en línea no comienza en una nueva línea 
-        y solo ocupa el ancho necesario. Ejemplo:
+        Un elemento en línea no comienza una nueva línea 
+        y solo ocupa el ancho necesario en función de su
+        contenido. Ejemplo:
     </p>
 
     <span class="contorno">Elemento &lt;span&gt;.</span>
-    <a href="#" class="contorno">Elemento &lt;a&gt;.</a>
-    <img src="" alt="Elemento <img>" class="contorno">
-    <input type="text" class="contorno" value="Elemento <input type='text'">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15503.920831797535!2d-89.65628575000001!3d13.71964805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ssv!4v1622488689315!5m2!1ses!2ssv" class="contorno"></iframe>
+
+    <a class="contorno" href="#">Elemento &lt;a&gt;.</a>
+
+    <img class="contorno" src="" alt="Elemento <img>">
+
+    <input class="contorno" type="text" value="Elemento <input type='text'">
+
+    <iframe class="contorno" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15503.920831797535!2d-89.65628575000001!3d13.71964805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ssv!4v1622488689315!5m2!1ses!2ssv"></iframe>
 
 
 
@@ -93,9 +100,10 @@
     <p>
         La propiedad <b>display: none;</b> se usa comúnmente con JavaScript para 
         ocultar y mostrar elementos sin eliminarlos y volver
-        a crearlos. Ciertos elementos tiene un display en none 
+        a crearlos. Ciertos elementos tiene un display con un valor "none" 
         por ejemplo la etiqueta &lt;script&gt;.
     </p>
+    
     <script class="verBlock contorno">"Este es un elemento <script>. Para verlo le cambiamos su display en block."</script>
 
 
@@ -115,6 +123,7 @@
         <li class="verInline contorno">About</li>
         <li class="verInline contorno">Contact</li>
     </ul>
+
     <span class="verBlock contorno">Un &lt;span&gt; es elemento en linea pero se puede pasar a bloque.</span>
 
 
@@ -125,7 +134,7 @@
         al diseño una vez esta oculto con esta propiedad.
     </p>
     <p>
-        visibility:hidden oculta el elemento pero aunque no 
+        Visibility:hidden oculta el elemento pero aunque no 
         se ve aun sigue ocupando el espacio, esto significa
         que aún afectará al diseño de la página.
     </p>
