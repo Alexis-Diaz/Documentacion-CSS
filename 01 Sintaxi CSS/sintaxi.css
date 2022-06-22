@@ -1,0 +1,37 @@
+/*
+CSS significa hoja de estilo en cascada
+
+Este es un lenguaje de estilo que se escribe en bloques llamados "reglas css"
+La sintaxi consta de los siguientes elementos:
+
+    1- Selector o selectores: 
+    Apunta al elemento HTML a diseñar.
+
+    2-Un bloque de declaración: 
+    Contiene una o más declaraciones encerradas entre llaves.
+
+    3-Declaraciones: 
+    Estas compuestas por propiedades css y valores. Cada propiedad-valor 
+    se separa por punto y coma.
+
+    4-Propiedad css y valor: la pripiedad especifica el diseño y el valor contiene
+    la variante del diseño. Se separan por dos puntos.
+
+Ejemplo:
+*/
+
+p {
+    font-size: 20px;
+    color: blue;
+}
+
+/*
+Explicación:
+En el ejemplo "p" es el selector. En este caso "p" significa que 
+todos los elementos HTML <p></p> se veran afectados por esta regla CSS.
+
+La propiedad "font-size" se refiere al tamaño que tendrá la letra. Aquí se indica que
+su valor será de 20 pixeles".
+
+La propiedad "color" indica el tipo de color que tendrá la letra. El valor es azul.
+*/
