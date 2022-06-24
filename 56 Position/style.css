@@ -26,6 +26,7 @@
     color: white;
     background-color: rgb(13, 70, 5);
 }
+
 /*--------------------------------*/
 #divRelative2{
     position: relative;
@@ -42,6 +43,7 @@
     width: 100px;
 }
 /*---------------------------------*/
+
 #divSticky{
     position: sticky;
     bottom:10px;
@@ -50,6 +52,9 @@
     background-color: rgb(155, 214, 155);
     padding: 10px;
 }
+
+
+
 /*----------------------------------*/
 .contenedor{
     position: relative;

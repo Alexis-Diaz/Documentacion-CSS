@@ -67,8 +67,25 @@
         Un elemento fijo no deja un hueco en la página donde 
         normalmente se habría ubicado.
 
-        Observe el elemento fijo en la esquina inferior 
+        Observe el elemento fijo en la esquina superior 
         derecha de la página. Aquí está el CSS que se utiliza:
+        <code>
+            <pre>
+            #divFixed{
+                position: fixed;
+                right: 0;
+                top:0;
+                border: solid 2px green;
+                padding-top: 20px;
+                padding-left: 10px;
+                height: 60px;
+                width: 70px;
+                border-radius:40px;
+                color: white;
+                background-color: rgb(13, 70, 5);
+            }
+            </pre>
+        </code>
     </p>
 
     <div id="divFixed">Elemento div fixed</div>
@@ -76,7 +93,7 @@
 
     <h2>position:absolute</h2>
     <p>
-        Un elemento con position: absolute;está posicionado
+        Un elemento con position: absolute; está posicionado
         en relación con el antepasado posicionado más 
         cercano (en lugar de posicionado en relación 
         con la ventana gráfica, como fijo).
@@ -92,6 +109,7 @@
         A continuación, se muestra un ejemplo sencillo:
     </p>
     <div id="divRelative2">
+        Este div es el antepasado posicionado más cercano.<br>
         Este div tiene posicion relativa
         <div id="divAbsolute">Este div tiene posicion absoluta</div>
     </div>
@@ -139,13 +157,57 @@
         detrás de los demás).
 
         Un elemento puede tener un orden de pila positivo o 
-        negativo:
+        negativo. En el siguiente ejemplo, el título se sobrepone a
+        la etiqueta &lt;img&gt; porque a la imagen le asignamos la
+        propiedad z-index con valor -1, lo que hace que se ubique por
+        debajo del elemento div y el elemento h3.
+
+        <code>
+            <pre>
+                div {
+                    position: relative;
+                    width: 500px;
+                    height: 400px;
+                    border: rgb(0, 45, 128) solid 2px;
+                }
+                
+                h3 {
+                    text-align: center;
+                    font-size: 30px;
+                    margin-top: 10px;
+                    color: white;
+                }
+
+                img {
+                    position: absolute;
+                    top:10px;
+                    left: 50px;
+                    z-index: -1;
+                    width: 400px;
+                }
+                
+            </pre>
+        </code>
+
+        Notar que pareciera que el elemento div no afecta a la imagen,
+        pero esto se debe a que el div es transparente. Si se le cambiara
+        el color de fondo veremos que efecto se encuentra posicionado 
+        sobre la imagen.<br>
+
+        Por tanto el orden de mas abajo hacia arriba de los siguientes elementos es el siguiente:
+        <ol>
+            <li>Elemento img</li>
+            <li>Elemento div</li>
+            <li>Elemento h3</li>
+        </ol>
     </p>
    <div class="contenedor">
+        div
         <h3 id="titulo">Este es un titulo h3</h3>
         <img class="position-absolute" src="../public/img/megaman.png">
    </div>
 
+    <br><br><br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
