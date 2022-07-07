@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./01-introduccion.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <p>
+        Flexbox nos ayuda a estructurar los elementos de una
+        pagina web de manera sencilla y fácil. Anteriormente
+        se usaba mucho la propiedad float para lograr diseños
+        creativos, pero hacerlo resultaba engorroso.
+    </p>
+
+    <p>
+        Con la propiedad flexbox es facil ubicar varios elementos
+        uno a la par de otro.
+    </p>
+    <P>
+        Para ello solo necesitamos un contenedor y los elementos
+        hijos a ordenar dentro de el.<br>
+        Una vez se tenga eso, solo se le aplica al elemento padre
+        la propiedad display con un valor flex y automaticamente
+        obtendremos todos los elementos ordenados de izquierda
+        a derecha.
+    </P>
+
+    <p>
+        Los dos valores para la propiedad display al usar Flexbox
+        son inline-flex y flex. La primera crea un contenedor flexible
+        que como su valor de propiedad lo indica solo ocupa el ancho
+        necesario de la pantalla dejando lugar a que otro elemento pueda
+        posicionar a la par de él y el segundo crea un contender flexible 
+        en bloque, como lo indica su valor, este utilizar todo el ancho
+        de la pantalla lo necesite o no.
+    </p>
+    
+    <h2>inline-flex</h2>
+    <section class="container-inline-flex">
+        <article class="item">item</article>
+        <article class="item">item</article>
+        <article class="item">item</article>
+    </section>
+    
+    <h2>flex</h2>
+    <section class="container-flex">
+        <article class="item">item</article>
+        <article class="item">item</article>
+        <article class="item">item</article>
+    </section>
+</body>
+</html>

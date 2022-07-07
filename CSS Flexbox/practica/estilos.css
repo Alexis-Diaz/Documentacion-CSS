@@ -1,0 +1,92 @@
+body{
+    background-color: rgb(20, 20, 20);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container {
+    border: 3px solid rgb(197, 197, 197);
+    height: 30vh;
+
+    /*PROPIEDADES FLEX PARA EL PADRE*/
+    display: flex;
+    /*flex, flex-inline*/
+    flex-direction: row;
+    /*row, row-reverse, column, column-reverse*/
+    flex-wrap: nowrap;
+    /*nowrap, wrap*/
+
+    flex-flow: row nowrap;
+    /*Shorhand de la propiedad flex-direcion y flex-wrap.
+    Se separan solo por espacio en blanco.*/
+
+    justify-content: start;
+    /*flex-start (start), center, flex-end (end), space-between, space-around, space-evenly*/
+    align-items: stretch;
+    /*stretch, flex-start (start), center, flex-end (end), baseline*/
+    align-content:stretch;
+    /*stretch, flex-start (start), center, flex-end (end), space-between, space-around, space-evenly*/
+}   
+
+/*Habilitar para probar baseline en aling-items*/
+/* .item:nth-child(3){
+    font-size: 4em;
+} */
+
+.item {
+    border: 3px solid rgb(0, 128, 128);
+    color: white;
+
+    /*PROPIEDADES FLEX PARA LOS HIJOS*/
+    flex-grow: 1;
+    /*Factor de crecimiento. Por defecto es 0, y solo acepta 
+    numeros enteros positivos. El numero indica cuantas partes 
+    del espacio sobrante se quedara el hijo. 
+    */
+
+    flex-shrink: 1;
+     /*Factor de reducción. Por defecto es 1, y solo acepta 
+    numeros enteros positivos. Este efecto solo se logra 
+    apreciar cuando el contenido de los hijos no cabe en el
+    espacio y por tanto necesitan reducirse y reordenar su 
+    contenido. El numero indica cuantas partes 
+    del espacio reducido disminuirá  el hijo. 
+    */
+
+    flex-basis: auto;
+    /*Es el tamaño del elemento hijo dentro de la caja flexbox
+    si la caja flexbox tiene una direccion de row, basis representa el width
+    Si la caja flexbox tiene una direccion de column, basis representa el height
+    Su valor por defecto es auto. Notar que esta propiedad vence al width y height por
+    mayor especificidad.*/
+
+    flex: 0 1 auto;
+    /*Es un shorthand de las propiedades flex-grow, flex-shrink y flex-basis
+    se separan por espacio*/
+
+    order:0;
+    /*Representa el orden que tendran los elementos hijos en la caja flexbox,
+    este orden puede ser de izquierda a derecha o arriba hacia abajo dependiendo
+    si su direccion es row o column.
+    Su valor por defecto es 0, acepta valores positivos y negativos y un 
+    valor menor siempre ira ante de un valor mayor*/
+
+    align-self: stretch;/*Sirve para que el elemento ropa fila y no obedezca align-item
+                         del contenedor padre y tome su propia alineacion*/
+    /*stretch, flex-start (start), center, flex-end (end), baseline*/
+}
+
+.item:nth-child(2){
+    flex-grow:2;
+    flex-shrink: 0;
+    order:1;
+}
+
+.item:nth-child(3){
+    flex-grow:2;
+    flex-shrink: 0;
+    order:-1;
+    align-self: center;
+}
