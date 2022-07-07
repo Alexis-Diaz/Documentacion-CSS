@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Propiedades del contenedor flexible</h1>
+    <p>
+        Un contenedor que tiene la propiedad display: flex cuenta con 
+        6 propiedades diferentes. Cada una con un comportamiento especifico y util.
+    </p>
+    <ol>
+        <li>flex-direction</li>
+        <li>flex-wrap</li>
+        <li>flex-flow (shorhand para las dos anteriores)</li>
+        <li>justify-content</li>
+        <li>align-item</li>
+        <li>align-content</li>
+    </ol>
+
+    <h2>flex-direction</h2>
+    <p>
+        Esta propiedad indica la dirección en que ordenara
+        los elementos. Ya sea en el eje x (horizontal) o eje
+        y (vertical). Por defecto su valor es <cite>row</cite>
+    </p>
+    <p>
+        Los valores que recibe esta propiedad son:
+    </p>
+    <ol>
+        <li>
+            row: Este es el valor por defecto. Alinea
+            los elementos de izquierda a derecha (eje x)
+
+            <section id="container-flex1">
+                <article class="item">article 01</article>
+                <article class="item">article 02</article>
+                <article class="item">article 03</article>
+                <article class="item">article 04</article>
+                <article class="item">article 05</article>
+                <article class="item">article 06</article>
+                <article class="item">article 07</article>
+                <article class="item">article 08</article>
+                <article class="item">article 09</article>
+            </section>
+        </li> 
+        <li>
+            row-reverse: Alinea los elementos de izquierda a 
+            derecha (eje x) pero invirtiendo el contenido.
+
+            <section id="container-flex2">
+                <article class="item">article 01</article>
+                <article class="item">article 02</article>
+                <article class="item">article 03</article>
+                <article class="item">article 04</article>
+                <article class="item">article 05</article>
+                <article class="item">article 06</article>
+                <article class="item">article 07</article>
+                <article class="item">article 08</article>
+                <article class="item">article 09</article>
+            </section>
+        </li> 
+        <li>
+            column: Alinea los elementos de arriba hacia
+            abajo (eje y) en forma de columnas.
+
+            <section id="container-flex3">
+                <article class="item">article 01</article>
+                <article class="item">article 02</article>
+                <article class="item">article 03</article>
+                <article class="item">article 04</article>
+                <article class="item">article 05</article>
+                <article class="item">article 06</article>
+                <article class="item">article 07</article>
+                <article class="item">article 08</article>
+                <article class="item">article 09</article>
+            </section>
+        </li> 
+        <li>
+            column-reverse: Alinea los elementos de arriba hacia
+            abajo (eje y) en forma de columnas pero invirtiendo
+            el contenido.
+
+            <section id="container-flex4">
+                <article class="item">article 01</article>
+                <article class="item">article 02</article>
+                <article class="item">article 03</article>
+                <article class="item">article 04</article>
+                <article class="item">article 05</article>
+                <article class="item">article 06</article>
+                <article class="item">article 07</article>
+                <article class="item">article 08</article>
+                <article class="item">article 09</article>
+            </section>
+        </li> 
+    </ol>
+   
+
+    <a href="./flex-wrap.html
+    ">Siguiente</a>
+</body>
+</html>
